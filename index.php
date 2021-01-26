@@ -15,7 +15,10 @@
     $credit = 1000;
     echo "<h1>Welcome to ".$name."!</h1>";
     echo "<h2>You have $".$credit." in your wallet.</h2>";
-    echo "<p>A car costs ".$products['Car']."</p>";
+    
+    foreach($products as $key => $value){
+	    echo "<p>The ".$key." costs ".$value."</p>";
+    }
     ?>
   </body>
 </html>
